@@ -4,26 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Notes</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body & Main Layout */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Arial', 'Georgia', 'Times New Roman', serif; /* Math-like fonts */
+            background: #121212;  /* Old dark background */
+            color: #e0e0e0;        /* Light text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 3rem 2rem;
+            text-align: center;
+            background: #1e1e1e;  /* Slightly lighter dark for contrast */
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            border: 1px solid #333;
+        }
+
+        .content {
+            margin-bottom: 150px; /* Prevent overlap */
+        }
+
+        h1, h2 {
+            font-size: 3rem;
+            color: white;
+            font-family: 'Arial';
+            margin-bottom: 1rem;
+        }
+
+        p, li {
+            font-size: 1.5rem;
+            color: #b0b0b0;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            font-family: 'Arial', 'Cambria Math', serif; /* Math-like fonts */
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+            text-align: left;
+        }
+
+        /* Links & Buttons */
+        .button {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 0.8rem 2rem;
+            background: #6200ee;  /* Old purple theme */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-family: 'Arial', 'Georgia', serif;
+            font-weight: bold;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: white;
+            color: #121212;  /* Dark text on light background */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Course Notes</h1>
-        <!-- <p>Click a course to view notes</p> -->
+        <a href="../index.html" class="button">⬅️ Back to Home</a>
 
+        <h1>Course Notes</h1>
         <div class="courses">
             <div class="course-card">
                 <a href="CS6601_Notes.pdf" class="course-link" target="_blank" rel="noopener noreferrer">
                     <h2>CS6601: Artificial Intelligence</h2>
                 </a>
-                <div class="grade">Grade: A</div>
+                <div class="grade"><b>Grade: A</b></div>
             </div>
 
             <div class="course-card">
-                <a href="CS6601_Notes.pdf" class="course-link" target="_blank" rel="noopener noreferrer">
-                    <h2>CS 7641: Machine Learning (in-progress)</h2>
+                <a href="" class="course-link" target="_blank" rel="noopener noreferrer">
+                    <h2>CS 7641: Machine Learning [in-progress]</h2>
                 </a>
-                <div class="grade">Grade: ?</div>
+                <!-- <div class="grade">Grade: ?</div> -->
             </div>
         </div>
     </div>
