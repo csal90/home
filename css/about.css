@@ -1,0 +1,35 @@
+/* About page specific styles */
+.content {
+    margin: 2rem 0 150px 0; /* Add top margin to create space from the back button */
+}
+
+h1, h2 {
+    font-size: 3rem;
+    color: var(--white);
+    font-family: 'Arial';
+    margin-bottom: 1rem;
+}
+
+p, li {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-family: 'Arial', 'Cambria Math', serif;
+}
+
+.email-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: var(--primary-hover);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    text-align: left;
+} 

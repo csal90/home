@@ -1,0 +1,84 @@
+/* Course Cards */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* Back button spacing */
+.button {
+    margin-bottom: 2rem;
+}
+
+.course-card {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+}
+
+.course-link {
+    text-decoration: none;
+    color: var(--white);
+    width: 100%;
+    text-align: center;
+}
+
+.course-card h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-card p {
+    font-size: 1.1rem;
+}
+
+.grade {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-muted);
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    background: var(--primary-hover);
+}
+
+/* Coming Soon Cards */
+.coming-soon {
+    background: var(--background-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0.5;
+    filter: blur(0.75px);
+    position: relative;
+}
+
+.coming-soon h2 {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.coming-soon::after {
+    content: "Coming Soon";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+} 
